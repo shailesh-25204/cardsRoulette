@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 
 	// "fmt"
 	"log"
@@ -28,9 +29,19 @@ var (
 	space   = []byte{' '}
 )
 
+var allowedOrigins = map[string]bool{
+	"http://localhost:5173":                true,
+	"https://cardsroulette-1.onrender.com": true,
+}
+
 var upgrader = websocket.Upgrader{
 	ReadBufferSize:  1024,
 	WriteBufferSize: 1024,
+	CheckOrigin: func(r *http.Request) bool {
+		origin := r.Header.Get("Origin")
+		fmt.Println("CONNECTION ORIGIN >>> ")
+		return allowedOrigins[origin]
+	},
 }
 
 type Client struct {
