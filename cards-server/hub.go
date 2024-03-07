@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"time"
 
@@ -52,7 +51,7 @@ func (h *Hub) run() {
 	for {
 		select {
 		case <-ticker.C:
-			fmt.Println("HUB SIZE = ", len(h.clients))
+			// fmt.Println("HUB SIZE = ", len(h.clients))
 			leaderboard, err := h.GetLeaderboard()
 			if err != nil {
 				log.Printf("Could Not Fetch Leaderboard")
