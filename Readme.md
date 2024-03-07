@@ -66,6 +66,6 @@ go run .
 
 Open your browser and navigate to http://localhost:5173 to access the Cards-Roulette application.
 
-##Contributions
+## Contributions
 
 Feel free to fork this repository and submit pull requests with your enhancements. We appreciate any improvements or bug fixes you can provide. Thank you for your support!
