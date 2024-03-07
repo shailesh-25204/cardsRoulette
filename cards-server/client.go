@@ -39,7 +39,7 @@ var upgrader = websocket.Upgrader{
 	WriteBufferSize: 1024,
 	CheckOrigin: func(r *http.Request) bool {
 		origin := r.Header.Get("Origin")
-		fmt.Println("CONNECTION ORIGIN >>> ")
+		fmt.Println("CONNECTION ORIGIN >>> ", origin)
 		return allowedOrigins[origin]
 	},
 }
