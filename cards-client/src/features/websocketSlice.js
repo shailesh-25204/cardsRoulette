@@ -15,7 +15,7 @@ const initialState ={
         players: [],
     },
     connStatus: "Closed",
-    socketUrl: process.env.WS_SERVER_ENDPOINT || import.meta.env.VITE_WS_SERVER_ENDPOINT,
+    socketUrl: "wss://cardsroulette.onrender.com",
     wsJsonResponse: {
         type: "newGame",
         len: 6,
