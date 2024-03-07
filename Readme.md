@@ -1,6 +1,6 @@
 # Cards-Roulette
 
-Cards-Roulette is a full-stack web application and a game where players test their luck and strategy with a deck of cards. The game is built with a frontend in React + Vite using Tailwind CSS, while the backend is powered by Golang. Redis serves as the database, providing efficient storage and retrieval of game data.
+Cards-Roulette is a full-stack web application and a game where players test their luck and strategy with a deck of cards. The game is built with a frontend in React + Vite using Tailwind CSS with Redux for state management, while the backend is powered by Golang. Redis serves as the database, providing efficient storage and retrieval of game data.
 
 
 
