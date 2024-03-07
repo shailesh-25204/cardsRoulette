@@ -1,4 +1,4 @@
-import { createSlice,nanoid } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState ={
     //add game state,
@@ -15,7 +15,7 @@ const initialState ={
         players: [],
     },
     connStatus: "Closed",
-    socketUrl: "ws://localhost:8080",
+    socketUrl: process.env.WS_SERVER_ENDPOINT || import.meta.env.VITE_WS_SERVER_ENDPOINT,
     wsJsonResponse: {
         type: "newGame",
         len: 6,

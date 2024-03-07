@@ -8,10 +8,12 @@ import {updateLeaderboard, updateGameState, changeUrl, updateStatus ,newJsonMsg,
 
 
 function App() {
+  // const socketUrl = process.env.WS_SERVER_ENDPOINT
   // const [socketUrl, setSocketUrl] = useState('ws://localhost:8080');
   const dispatch = useDispatch()
   // const [messageHistory, setMessageHistory] = useState([]);
   const socketUrl = useSelector(state => state.socketUrl)
+  // console.log("THIS IS WSURL = ", import.meta.env.VITE_WS_SERVER_ENDPOINT)
   const { sendMessage, lastJsonMessage,  readyState } = useWebSocket(socketUrl,{
     share: true,
   });
