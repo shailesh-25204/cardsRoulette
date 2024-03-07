@@ -29,7 +29,8 @@ var (
 )
 
 var allowedOrigins = map[string]bool{
-	"http://localhost:5173": true,
+	"http://localhost:5173":                 true,
+	"https://cardsroulette-1.onrender.com/": true,
 }
 
 var upgrader = websocket.Upgrader{
