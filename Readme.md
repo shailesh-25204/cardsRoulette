@@ -6,7 +6,7 @@ Cards-Roulette is a full-stack web application and a game where players test the
 
 ## Technologies Used
 
-- Frontend: React+ Vite, Tailwind CSS , Redux
+- Frontend: React + Vite, Tailwind CSS , Redux
 - Backend: Golang + Gin
 - Database: Redis
 
@@ -31,7 +31,7 @@ If you wish to contribute to Cards-Roulette or explore its codebase, follow thes
 
 1. Clone the repository:
 ```bash
-   git clone https://github.com/your-username/cards-roulette.git
+   git clone https://github.com/shailesh-25204/cardsRoulette.git
 ```
 
 2. Install Dependencies for frontend and backend:
@@ -55,16 +55,16 @@ These environment variables are used to configure the server. They should be set
 
 ```bash
 # Client
-cd ../frontend
+cd ../cards-client
 npm run dev
 
 # Server
-cd ../backend
+cd ../cards-server
 go run .
 
 ```
 
-Open your browser and navigate to http://localhost:3000 to access the Cards-Roulette application.
+Open your browser and navigate to http://localhost:5173 to access the Cards-Roulette application.
 
 ##Contributions
 
